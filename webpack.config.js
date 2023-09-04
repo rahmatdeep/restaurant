@@ -7,7 +7,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
     mode: 'development',
     entry: {
-        index: './src/index.js',
+        main: './src/main.js',
     },
     plugins:[
         new HtmlWebpackPlugin({
@@ -46,6 +46,10 @@ module.exports = {
                         loader:'sass-loader'
                     }
                 ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource'
             }
         ]
     }

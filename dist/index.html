@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap w/ Webpack</title>
-<script defer src="index.js"></script></head>
+<script defer src="main.js"></script></head>
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Webpack!</h1>
-        <button class="btn btn-primary">Primary button</button>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Restaraunt Menu</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#" id="introduction">Introduction</a>
+              <a class="nav-link" href="#" id="menu">Menu</a>
+              <a class="nav-link" href="#" id="contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div id="content"></div>
+      </main>
 </body>
 </html>
